@@ -1,0 +1,71 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*Top Menu*/
+
+li{
+    color: white;
+    list-style: none;
+}
+
+svg:hover{
+    fill: #eee9cb;
+}
+
+li:hover {
+    color: #eee9cb;
+    cursor: pointer;
+  }
+
+
+#Menu-bar{
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
+    background-color: #021526;
+    padding: 20px;
+    text-align: center;
+    font-size: .8rem;
+    gap: 1rem;
+}
+
+#Menu-bar > li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about{
+    grid-area: 1 / 2;
+}
+
+.Skills{
+    grid-area: 1 / 3;
+}
+
+.Hobbies{
+    grid-area: 1 / 4;
+}
+
+.Contact{
+    grid-area: 1 / 5;
+}
+
+.Contact > img{
+    max-width: 150px;
+}
+
+/*Banner Section*/
+
+#Presentation{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+    padding: 20px;
+    text-align: center;
+    font-size: .8rem;
+    gap: 1rem;
+    background-image: url(https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt0275bfb05eb4e934/650f0329cd65a44b04a8d1eb/IRE6XYVC3VFXDAXBGJGBKHCUHE.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale)
+}
