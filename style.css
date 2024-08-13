@@ -58,10 +58,10 @@ svg:hover{
 
 .PresentationGrid{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    padding: 20px;
     text-align: center;
-    gap: 1rem;
     position: relative;
 }
 
@@ -69,9 +69,7 @@ svg:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20%;
     position: relative;
-    flex-wrap: wrap;
 }
 
 .PresentationGrid::before{
@@ -94,34 +92,13 @@ h1{
     position: relative;
 }
 
-.HeroImage{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .HeroImage > img{
     grid-area: 1 / 2;
-    width: 60%;
+    width: 80%;
     max-width: 1000px;
-    padding-left: 20%;
     position: relative;
-}
-
-@media (max-width: 600px) {
-	/* CSS for screens below or equal to 600px wide*/
-    .HeroImage > img{
-        grid-area: 1 / 2;
-        width: 50%;
-        height: 30%;
-        padding-left: 50%;
-        padding-top: 50%;
-        position: relative;
-    }
-
-    .ProfilePic > img{
-        height:20%;
-    }
-
 }
 
 /*About Section*/
@@ -160,42 +137,18 @@ h1{
 
 .SkillSection{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
-}
-
-.SkillSection > h2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-column: span 8;
-}
-
-.SkillSection > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 40px;
+    padding: 20px;
     text-align: center;
 }
 
-.SkillSection > Div{
-    grid-area: 2;
+.SkillH2{
+    display: block;
+    text-align: center;
 }
 
-.SkillSection > .Dynamics365{
-    grid-area: 3;
-}
-
-.SkillSection > .Excel{
-    grid-area: 3;
-}
-
-.SkillSection > .VSCode{
-    grid-area: 3;
-}
-
-.SkillSection > .Github{
-    grid-area: 3;
+.SkillSection > div{
+    font-size: larger;
+    font-weight: bolder;
 }
