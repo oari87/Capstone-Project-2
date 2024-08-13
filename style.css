@@ -71,6 +71,7 @@ svg:hover{
     justify-content: center;
     padding-left: 20%;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .PresentationGrid::before{
@@ -91,6 +92,11 @@ h1{
     color: #021526;
     text-decoration: underline;
     position: relative;
+}
+
+.HeroImage{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .HeroImage > img{
@@ -136,20 +142,45 @@ h1{
 
 /*Skills Section*/
 
-.skills{
-    text-align: center;
+.SkillSection{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
 }
 
-.skills > li{
-    list-style: none;
-    padding-left: 0;
+.SkillSection > h2{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    font-size: 2rem;
+    grid-column: span 8;
+}
+
+.SkillSection > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.SkillSection > Div{
+    grid-area: 2;
+}
+
+.SkillSection > .Dynamics365{
+    grid-area: 3;
+}
+
+.SkillSection > .Excel{
+    grid-area: 3;
+}
+
+.SkillSection > .VSCode{
+    grid-area: 3;
+}
+
+.SkillSection > .Github{
+    grid-area: 3;
 }
