@@ -53,14 +53,19 @@ svg:hover{
     grid-area: 1 / 5;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+  }
 
 /*Banner Section*/
 
 .PresentationGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     text-align: center;
     position: relative;
 }
@@ -92,13 +97,16 @@ h1{
     position: relative;
 }
 
-
-
 .HeroImage > img{
     grid-area: 1 / 2;
+    height: 90%;
     width: 80%;
-    max-width: 1000px;
     position: relative;
+}
+
+.HeroImage{
+    display: flex;
+    justify-content: center;
 }
 
 /*About Section*/
@@ -108,13 +116,12 @@ h1{
     align-items: center;
     background-color:#021526;
     flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 50px;
     color: white;
 }
 
 .AboutSection > Div{
-    padding: 50px;
+    margin: 30px;
 }
 
 .AboutMe > li{
@@ -123,8 +130,20 @@ h1{
 
 }
 
+.ProfilePic{
+    display: flex;
+
+}
+
 .ProfilePic > img{
-    height: 400px;
+    height: 25rem;
+}
+
+@media (max-width: 600px) {
+	/* CSS for screens below or equal to 600px wide*/
+    .ProfilePic > img{
+        height: 20rem;
+    }
 }
 
 .Experience{
