@@ -171,3 +171,41 @@ h1{
     font-size: larger;
     font-weight: bolder;
 }
+
+
+/*Experience Section*/
+
+.JobExperience{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ExpH2{
+    display: block;
+    text-align: center;
+}
+
+.content{
+    padding-left: 1%;
+    padding-right: 8%;
+    border-left: 2px solid #6EACDA;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content::before{
+    content: "";
+    position:fixed
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    top: 0;
+    border: 2px solid #6EACDA;
+}
+
+.content > ul li{
+    list-style:circle;
+}
